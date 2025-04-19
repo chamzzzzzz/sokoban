@@ -46,8 +46,10 @@ function Sokoban(patterns) {
         }
         
         if (finished) {
-            alert('You have completed this level, the next stage will level now.');
-            _playNextMap();
+            setTimeout(function() {
+                alert('You have completed this level, the next stage will level now.');
+                _playNextMap();
+            }, 100);
         }
     }
     
